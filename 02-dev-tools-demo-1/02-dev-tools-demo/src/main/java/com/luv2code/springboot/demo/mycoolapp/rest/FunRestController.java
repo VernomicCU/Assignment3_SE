@@ -10,21 +10,21 @@ public class FunRestController {
 
     @GetMapping("/")
     public String sayHello() {
-        return "Hello World!";
+        return "Thomas Liftinger";
     }
 
     // expose a new endpoint for "workout"
 
-    @GetMapping("/workout")
+    @GetMapping("/movie")
     public String getDailyWorkout() {
-        return "Run a hard 5k";
+        return "Interstellar";
     }
 
     // expose a new endpoint for "fortune"
 
-    @GetMapping("/fortune")
+    @GetMapping("/music")
     public String getDailyFortune() {
-        return "Today is your lucky day.";
+        return "Country or Pop";
     }
 
 }

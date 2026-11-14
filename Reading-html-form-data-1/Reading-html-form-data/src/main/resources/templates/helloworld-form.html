@@ -1,20 +1,22 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-
 <head>
     <meta charset="UTF-8">
     <title>Hello World - Input Form</title>
 </head>
 <body>
+    <form th:action="@{/processForm}" method="get">
+        <p>
+            <label for="studentName">Your Name</label>
+            <input type="text" id="studentName" name="studentName" required>
+        </p>
 
-  <form th:action="@{/processForm}" method="GET">
+        <p>
+            <label for="favoriteSport">Favorite Sport Name:</label>
+            <input type="text" id="favoriteSport" name="favoriteSport" required>
+        </p>
 
-      <input type="text" name="studentName"
-             placeholder="What's your name?" />
-
-      <input type="submit" />
-
-  </form>
-
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
